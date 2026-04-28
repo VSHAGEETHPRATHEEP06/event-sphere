@@ -8,10 +8,10 @@ A scalable, secure, and highly available event ticket booking system built with 
 
 | Name | Registration No. |
 |---|---|
-| Shageethpratheep V. | EG/2021/4809 |
-| Arivanan V. | EG/2021/4414 |
-| Arivarasan J. | EG/2021/4415 |
-| Bravin K. | EG/2021/4447 |
+| Shageethpratheep V.   | EG/2021/4809 |
+| Arivanan V.           | EG/2021/4414 |
+| Arivarasan J.         | EG/2021/4415 |
+| Bravin K.             | EG/2021/4447 |
 
 ## 🏗️ Architecture
 
@@ -28,13 +28,13 @@ A scalable, secure, and highly available event ticket booking system built with 
                     └────┬────┘ └───┬────┘ └─┬──┬───┘ └──┬───────┘
                          │         │        │  │         │
                     ┌────▼────┐ ┌──▼─────┐ ┌▼──▼──┐  ┌──▼─────┐
-                    │Postgres │ │Postgres│ │Redis  │  │Postgres│
-                    │auth_db  │ │event_db│ │Cache  │  │pay_db  │
+                    │Postgres │ │Postgres│ │Redis │  │Postgres│
+                    │auth_db  │ │event_db│ │Cache │  │pay_db  │
                     └─────────┘ └────────┘ └──────┘  └────────┘
                                               │
                                         ┌─────▼──────┐
-                                        │  RabbitMQ   │
-                                        │  (Async)    │
+                                        │  RabbitMQ  │
+                                        │  (Async)   │
                                         └─────┬──────┘
                                               │
                                      ┌────────▼────────┐
@@ -50,18 +50,18 @@ A scalable, secure, and highly available event ticket booking system built with 
 
 ## 🛠️ Tech Stack
 
-| Component | Technology |
-|---|---|
-| Frontend | React 18 + Vite |
-| API Gateway | Nginx |
-| Backend Services | Node.js + Express |
-| Database | PostgreSQL 15 (per-service) |
-| Cache & Locking | Redis 7 |
-| Message Broker | RabbitMQ 3 |
-| Authentication | JWT + bcrypt |
-| Email | Nodemailer (Ethereal) |
-| Containers | Docker + Docker Compose |
-| CI/CD | GitHub Actions |
+| Component             | Technology                  |
+|-----------------------|-----------------------------|
+| Frontend              | React 18 + Vite             |
+| API Gateway           | Nginx                       |
+| Backend Services      | Node.js + Express           |
+| Database              | PostgreSQL 15 (per-service) |
+| Cache & Locking       | Redis 7                     |
+| Message Broker        | RabbitMQ 3                  |
+| Authentication        | JWT + bcrypt                |
+| Email                 | Nodemailer (Ethereal)       |     
+| Containers            | Docker + Docker Compose     |
+| CI/CD                 | GitHub Actions              |
 
 ## 🚀 Quick Start
 
